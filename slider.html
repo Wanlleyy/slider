@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em Slides</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section>
+        <video id="slider" autoplay muted loop>
+            <source src="video/video1.mp4" type="video/mp4">
+        </video>
+        <ul class="navegacao">
+            <li onclick="videoUrl('video/video1.mp4')"><img src="imagens/thumb1.jpg" alt="Thumb do Primeiro Vídeo"></li>
+            <li onclick="videoUrl('video/video2.mp4')"><img src="imagens/thumb2.jpg" alt="Thumb do Segundo Vídeo"></li>
+            <li onclick="videoUrl('video/video3.mp4')"><img src="imagens/thumb3.jpg" alt="Thumb do Terceiro Vídeo"></li>
+            <li onclick="videoUrl('video/video4.mp4')"><img src="imagens/thumb4.jpg" alt="Thumb do Quarto Vídeo"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function videoUrl(video){
+            document.getElementById("slider").src = video;
+        }
+    </script>
+
+</body>
+</html>
